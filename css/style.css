@@ -1,52 +1,4 @@
-/* FONTS */
-/* livvic-regular - latin */
-@font-face {
-    font-family: "Livvic";
-    font-style: normal;
-    font-weight: 400;
-    src: local(""), url("../fonts/livvic-v13-latin-regular.woff2") format("woff2"),
-      /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url("../fonts/livvic-v13-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* livvic-500italic - latin */
-  @font-face {
-    font-family: "Livvic";
-    font-style: italic;
-    font-weight: 500;
-    src: local(""),
-      url("../fonts/livvic-v13-latin-500italic.woff2") format("woff2"),
-      /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url("../fonts/livvic-v13-latin-500italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* livvic-600 - latin */
-  @font-face {
-    font-family: "Livvic";
-    font-style: normal;
-    font-weight: 600;
-    src: local(""), url("../fonts/livvic-v13-latin-600.woff2") format("woff2"),
-      /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url("../fonts/livvic-v13-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* livvic-700 - latin */
-  @font-face {
-    font-family: "Livvic";
-    font-style: normal;
-    font-weight: 700;
-    src: local(""), url("../fonts/livvic-v13-latin-700.woff2") format("woff2"),
-      /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url("../fonts/livvic-v13-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* livvic-700italic - latin */
-  @font-face {
-    font-family: "Livvic";
-    font-style: italic;
-    font-weight: 700;
-    src: local(""),
-      url("../fonts/livvic-v13-latin-700italic.woff2") format("woff2"),
-      /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url("../fonts/livvic-v13-latin-700italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@400;500;600;700&display=swap');
   /* ROOT */
   :root {
     --hero-bg-color: #014e56;
@@ -619,3 +571,117 @@
     color: #004047;
   }
   
+
+
+/**************? MIRJALOL AKA START ************/
+/*************!   HEADER TABLET START     *******************/ 
+  @media screen and (max-width: 768px) {
+    
+  }
+/*************!   HEADER TABLET END     *******************/ 
+
+
+/*************!   HERO-SECTION TABLET START     *******************/ 
+@media screen and (max-width: 768px) {
+    
+}
+/*************!   HERO-SECTION TABLET END     *******************/ 
+
+/**************? MIRJALOL AKA END ************/
+
+
+
+
+/**************? DIYORBEK  AKA START ************/
+/*************!   BUILDING-SECTION TABLET START     *******************/ 
+@media screen and (max-width: 768px) {
+    
+}
+/*************!   BUILDING-SECTION TABLET END     *******************/ 
+
+
+/*************!   DELEVERY-SECTION TABLET START     *******************/ 
+@media screen and (max-width: 768px) {
+    
+}
+/*************!   DELEVERY-SECTION TABLET END     *******************/ 
+/**************? DIYORBEK  AKA END ************/
+
+
+
+/**************? ULUGBEK   AKA START ************/
+/*************!   SITE-ASIDE TABLET START     *******************/ 
+@media screen and (max-width: 768px) {
+    
+}
+/*************!   SITE-ASIDE TABLET END     *******************/ 
+
+
+/*************!   SITE-FOOTER TABLET START     *******************/ 
+@media screen and (max-width: 768px) {
+    
+}
+/*************!   SITE-FOOTER TABLET END     *******************/ 
+/**************? ULUGBEK   AKA END ************/
+
+
+
+
+
+
+
+
+
+/*************** MOBILE START ****************/
+
+/**************? MIRJALOL AKA START ************/
+/*************!   HEADER MOBILE START     *******************/ 
+@media screen and (max-width: 375px) {
+    
+}
+/*************!   HEADER MOBILE END     *******************/ 
+
+
+/*************!   HERO-SECTION MOBILE START     *******************/ 
+@media screen and (max-width: 375px) {
+  
+}
+/*************!   HERO-SECTION MOBILE END     *******************/ 
+
+/**************? MIRJALOL AKA END ************/
+
+
+
+
+/**************? DIYORBEK  AKA START ************/
+/*************!   BUILDING-SECTION MOBILE START     *******************/ 
+@media screen and (max-width: 375px) {
+  
+}
+/*************!   BUILDING-SECTION MOBILE END     *******************/ 
+
+
+/*************!   DELEVERY-SECTION MOBILE START     *******************/ 
+@media screen and (max-width: 375px) {
+  
+}
+/*************!   DELEVERY-SECTION MOBILE END     *******************/ 
+/**************? DIYORBEK  AKA END ************/
+
+
+
+/**************? ULUGBEK   AKA START ************/
+/*************!   SITE-ASIDE MOBILE START     *******************/ 
+@media screen and (max-width: 375px) {
+  
+}
+/*************!   SITE-ASIDE MOBILE END     *******************/ 
+
+
+/*************!   SITE-FOOTER MOBILE START     *******************/ 
+@media screen and (max-width: 375px) {
+  
+}
+/*************!   SITE-FOOTER MOBILE END     *******************/ 
+/**************? ULUGBEK   AKA END ************/
+/*************** MOBILE END ****************/
