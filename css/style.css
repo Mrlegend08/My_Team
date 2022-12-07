@@ -279,7 +279,8 @@ a {
 }
 
 .deliver-section__title {
-  width: 932px;
+  width: 100%;
+  max-width: 932px;
   margin: 0 auto;
   margin-bottom: 56px;
   font-weight: 700;
@@ -591,19 +592,17 @@ a {
 }
 /*************!   BUILDING-SECTION TABLET END     *******************/
 
-/*************!   DELEVERY-SECTION TABLET START     *******************/
+/*************!   DELiVERY-SECTION TABLET START     *******************/
 @media screen and (max-width: 768px) {
   .deliver-section {
     padding: 100px 0;
-    background-position: calc(50% - 405px) calc(50% - 333px),
-      calc(50% + 300px) calc(50% + 643px);
+    background-position: calc(50% - 302px) calc(50% - 555px),
+      calc(50% + 300px) calc(50% + 605px);
   }
 
   .deliver-section__title {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 573px;
+    width: 100%;
+    max-width: 573px;
     align-items: center;
     font-size: 32px;
     line-height: 32px;
@@ -613,45 +612,66 @@ a {
     align-items: center;
     flex-direction: column;
   }
+
+  .deliver-section__item {
+    width: 100%;
+    max-width: 573px;
+  }
 }
-/*************!   DELEVERY-SECTION TABLET END     *******************/
+/*************!   DELIVERY-SECTION TABLET END     *******************/
 
 /*************** MOBILE START ****************/
 
-/**************? MIRJALOL AKA START ************/
-/*************!   HEADER MOBILE START     *******************/
-@media screen and (max-width: 375px) {
-}
-/*************!   HEADER MOBILE END     *******************/
-
-/*************!   HERO-SECTION MOBILE START     *******************/
-@media screen and (max-width: 375px) {
-}
-/*************!   HERO-SECTION MOBILE END     *******************/
-
-/**************? MIRJALOL AKA END ************/
-
-/**************? DIYORBEK  AKA START ************/
 /*************!   BUILDING-SECTION MOBILE START     *******************/
 @media screen and (max-width: 375px) {
+  .build-section {
+    background-position: calc(50% + 178px) top;
+  }
+
+  .build-section__title {
+    width: 100%;
+    max-width: 240px;
+  }
+
+  .build-section__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 327px;
+    text-align: center;
+    padding: 0;
+  }
+
+  .build-section__item::before {
+    position: static;
+    margin-bottom: 16px;
+  }
+
+  .build-section__item-title {
+    display: flex;
+    flex-direction: column;
+  }
 }
 /*************!   BUILDING-SECTION MOBILE END     *******************/
 
 /*************!   DELEVERY-SECTION MOBILE START     *******************/
 @media screen and (max-width: 375px) {
+  .deliver-section {
+    padding: 140px 0 164px;
+    background-position: calc(50% - 105px) calc(50% - 660px),
+      calc(50% + 100px) calc(50% + 710px);
+  }
+
+  .deliver-section__title {
+    width: 100%;
+    max-width: 327px;
+  }
+
+  .deliver-section__item {
+    width: 100%;
+    max-width: 327px;
+  }
 }
 /*************!   DELEVERY-SECTION MOBILE END     *******************/
-/**************? DIYORBEK  AKA END ************/
-
-/**************? ULUGBEK   AKA START ************/
-/*************!   SITE-ASIDE MOBILE START     *******************/
-@media screen and (max-width: 375px) {
-}
-/*************!   SITE-ASIDE MOBILE END     *******************/
-
-/*************!   SITE-FOOTER MOBILE START     *******************/
-@media screen and (max-width: 375px) {
-}
-/*************!   SITE-FOOTER MOBILE END     *******************/
-/**************? ULUGBEK   AKA END ************/
 /*************** MOBILE END ****************/
