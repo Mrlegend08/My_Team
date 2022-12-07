@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@400;500;600;700&display=swap');
+  /* ROOT */
+  :root {
+    --hero-bg-color: #014e56;
+    --build-bg-color: #012f34;
+    --deliver-bg-color: #004047;
+    --article-bg-color: #f67e7e;
+    --footer-bg-color: #002529;
+    --main-text-color: #fff;
+    --deliver-text-color: #79c8c7;
+  }
+  
+  html {
+    box-sizing: border-box;
+    height: 100%;
+    scroll-behavior: smooth;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    font-family: "Livvic", "Arial", sans-serif;
+    font-weight: 600;
+    background-color: #fff;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1150px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  
+  ul {
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
