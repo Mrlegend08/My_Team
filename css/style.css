@@ -302,7 +302,8 @@
     justify-content: space-between;
   }
   .deliver-section__item {
-    width: 350px;
+    max-width: 350px;
+    width: 100%;
     padding-top: 36px;
     background-image: url("../images/icons/quotu.svg");
     background-repeat: no-repeat;
