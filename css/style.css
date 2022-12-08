@@ -1,688 +1,792 @@
-@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@400;500;600;700&display=swap');
-  /* ROOT */
-  :root {
-    --hero-bg-color: #014e56;
-    --build-bg-color: #012f34;
-    --deliver-bg-color: #004047;
-    --article-bg-color: #f67e7e;
-    --footer-bg-color: #002529;
-    --main-text-color: #fff;
-    --deliver-text-color: #79c8c7;
-  }
-  
-  html {
-    box-sizing: border-box;
-    height: 100%;
-    scroll-behavior: smooth;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    margin: 0;
-    font-family: "Livvic", "Arial", sans-serif;
-    font-weight: 600;
-    background-color: #fff;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-  
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-  
-  .container {
-    width: 100%;
-    max-width: 1150px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-  
-  ul {
-    padding-left: 0;
-    list-style: none;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  /****************** Header styles start *****************/
-  .site-header {
-    padding-top: 73px;
-    padding-bottom: 129px;
-    background-color: var(--hero-bg-color);
-  }
-  
-  .site-header__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .site-header__start {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 380px;
-  }
-  
-  .site-header__logo {
-    color: var(--main-text-color);
-  }
-  
-  .site-nav__list {
-    display: flex;
-  }
-  
-  .site-nav__item:first-child {
-    margin-right: 40px;
-  }
-  
-  .site-nav__link {
-    font-size: 18px;
-    line-height: 28px;
-    color: var(--main-text-color);
-  }
-  
-  .site-nav__link:active {
-    color: var(--article-bg-color);
-  }
-  
-  .site-header__btn {
-    padding-top: 11px;
-    padding-right: 33px;
-    padding-bottom: 11px;
-    padding-left: 32px;
-    border: 2px solid var(--main-text-color);
-    border-radius: 24px;
-    font-size: 18px;
-    line-height: 28px;
-    color: var(--main-text-color);
-  }
-  
-  .site-header__btn:active {
-    background-color: var(--main-text-color);
-    color: var(--footer-bg-color);
-  }
-  /****************** Header styles end *****************/
-  
-  /****************** Main styles start *****************/
-  
-  /* Hero section styles start */
-  .hero-section {
-    padding-bottom: 250px;
-    background-image: url("../images/icons/disk-left.svg"),
-      url("../images/icons/disk-bottom.svg");
-    background-repeat: no-repeat;
-    background-position: calc(50% - 770px) top,
-      calc(50% + 400px) calc(50% + 230px);
-    background-color: var(--hero-bg-color);
-  }
-  
-  .hero-section__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
-  
-  .hero-section__title {
-    width: 600px;
-    margin: 0;
-    font-weight: 700;
-    font-size: 100px;
-    line-height: 100px;
-    color: var(--main-text-color);
-  }
-  
-  .hero-section__title-talent {
-    color: var(--article-bg-color);
-  }
-  
-  .hero-section__desc {
-    width: 445px;
-    margin: 0;
-    font-size: 18px;
-    line-height: 28px;
-    color: var(--main-text-color);
-  }
-  
-  .hero-section__desc::before {
-    display: block;
-    width: 50px;
-    margin-bottom: 79px;
-    height: 4px;
-    background-color: var(--deliver-text-color);
-    content: "";
-  }
-  /* Hero section styles end */
-  
-  /* Build section styles start */
-  .build-section {
-    padding-top: 140px;
-    padding-bottom: 140px;
-    background-image: url("../images/icons/right-circle.svg");
-    background-repeat: no-repeat;
-    background-position: calc(50% + 760px) bottom;
-    background-color: var(--build-bg-color);
-  }
-  
-  .build-section__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  
-  .build-section__title {
-    width: 455px;
-    margin: 0;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 48px;
-    color: var(--main-text-color);
-  }
-  
-  .build-section__title::before {
-    display: block;
-    width: 50px;
-    height: 4px;
-    margin-bottom: 54px;
-    background-color: var(--article-bg-color);
-    content: "";
-  }
-  
-  .build-section__list {
-    width: 540px;
-    margin-top: 54px;
-  }
-  
-  .build-section__item {
-    position: relative;
-    margin-bottom: 32px;
-    padding-left: 95px;
-  }
-  
-  .build-section__item:last-child {
-    margin-bottom: 0;
-  }
-  
-  .build-section__item::before {
-    position: absolute;
-    top: 10px;
-    left: 0;
-    display: inline-block;
-    width: 72px;
-    height: 72px;
-    padding-right: 72px;
-    margin-right: 23px;
-    background-image: url("../images/icons/user.svg");
-    background-repeat: no-repeat;
-    background-position: left center;
-    content: "";
-  }
-  
-  .build-section__item:nth-child(2)::before {
-    background-image: url("../images/icons/settings.svg");
-  }
-  
-  .build-section__item:nth-child(3)::before {
-    background-image: url("../images/icons/grafic.svg");
-  }
-  
-  .build-section__item-title {
-    margin-top: 0;
-    margin-bottom: 16px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 28px;
-    color: var(--article-bg-color);
-  }
-  
-  .build-section__item-desc {
-    margin: 0;
-    font-size: 15px;
-    line-height: 25px;
-    color: var(--main-text-color);
-    opacity: 0.8;
-  }
-  /* Build section styles end */
-  
-  /* Deliver section styles start */
-  .deliver-section {
-    padding-top: 140px;
-    padding-bottom: 151px;
-    background-image: url("../images/deliver-right-bg.png"),
-      url("../images/icons/rigth-bottom-bg.svg");
-    background-position: calc(50% - 685px) calc(50% - 333px),
-      calc(50% + 660px) calc(50% + 382px);
-    background-repeat: no-repeat;
-    background-color: #004047;
-  }
-  
-  .deliver-section__title {
-    max-width: 932px;
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 56px;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 48px;
-    text-align: center;
-    color: var(--main-text-color);
-  }
-  
-  .deliver-section__title-span {
-    color: var(--deliver-text-color);
-  }
-  
-  .deliver-section__list {
-    display: flex;
-    justify-content: space-between;
-  }
-  .deliver-section__item {
-    width: 350px;
-    padding-top: 36px;
-    background-image: url("../images/icons/quotu.svg");
-    background-repeat: no-repeat;
-    background-position: top center;
-    text-align: center;
-  }
-  
-  .deliver-section__desc {
-    margin-top: 0;
-    margin-bottom: 24px;
-    font-size: 15px;
-    line-height: 25px;
-    color: var(--main-text-color);
-  }
-  
-  .deliver-section__user-name {
-    margin-top: 0;
-    margin-bottom: 2px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 28px;
-    color: var(--deliver-text-color);
-  }
-  
-  .deliver-section__job-title {
-    margin-top: 0;
-    margin-bottom: 32px;
-    font-size: 13px;
-    line-height: 18px;
-    color: var(--main-text-color);
-  }
-  /* Deliver section styles end */
-  
-  /****************** Main styles end *****************/
-  
-  /***************** Article styles start ****************/
-  .site-article {
-    padding-top: 76px;
-    padding-bottom: 86px;
-    background-color: var(--article-bg-color);
-    background-image: url(../images/icons/left-bottom-bg.svg);
-    background-repeat: no-repeat;
-    background-position: calc(50% - 650px) calc(50% + 83px);
-  }
-  
-  .site-article-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .site-article-title {
-    margin: 0;
-    margin-right: 260px;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 38px;
-    color: var(--build-bg-color);
-  }
-  .site-article-link {
-    padding: 11px 33px;
-    background-color: var(--article-bg-color);
-    border: 2px solid var(--build-bg-color);
-    border-radius: 24px;
-    font-size: 18px;
-    line-height: 28px;
-    color: var(--build-bg-color);
-  }
-  .site-article-link:active {
-    background-color: var(--build-bg-color);
-    color: var(--main-text-color);
-  }
-  /**************** Article styles end ****************/
-  
-  /****************** Footer styles start ****************/
-  
-  .site-footer {
-    padding: 48px 0;
-    background-color: var(--footer-bg-color);
-  }
-  
-  .site-foooter-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .site-footer-start {
-    display: flex;
-  }
-  .site-footer-top {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100px;
-    width: 310px;
-  }
-  .site-footer-logo {
-    color: var(--main-text-color);
-  }
-  .site-footer-start-list {
-    display: flex;
-    align-items: center;
-    margin: 0;
-  }
-  .site-footer-start-item:first-child {
-    margin-right: 40px;
-  }
-  .site-footer-start-link {
-    font-size: 18px;
-    line-height: 28px;
-    color: var(--main-text-color);
-  }
-  .site-footer-start-link:active {
-    color: var(--article-bg-color);
-  }
-  .site-footer-bottom-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100px;
-    margin: 0;
-  }
-  .site-footer-bottom-link {
-    font-size: 15px;
-    line-height: 25px;
-    color: var(--main-text-color);
-    mix-blend-mode: normal;
-    opacity: 0.6;
-  }
-  .site-footer-end {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-    height: 100px;
-  }
-  .site-footer-social {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-  }
-  .site-footer-social-link {
-    color: var(--main-text-color);
-  }
-  .site-footer-social-link:active {
-    color: var(--article-bg-color);
-  }
-  .site-footer-desc {
-    font-size: 15px;
-    line-height: 25px;
-    text-align: right;
-    color: var(--main-text-color);
-    mix-blend-mode: normal;
-    opacity: 0.6;
-  }
-  
-  /****************** footer styles end ****************/
-  
-  .contact-section {
-    padding-bottom: 120px;
-    background-color: #014e56;
-  }
-  .contact-section-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .contact-section-start {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .contact-section-title {
-    width: 350px;
-    height: 100px;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 100px;
-    color: #ffffff;
-    margin-top: 0;
-    margin-bottom: 16px;
-  }
-  .contact-section-desc {
-    width: 540px;
-    height: 48px;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 48px;
-    color: #f67e7e;
-    margin-top: 0;
-    margin-bottom: 32px;
-  }
-  .contact-section-list {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  .contact-section-item {
-    display: flex;
-    align-items: center;
-    gap: 23px;
-    margin-bottom: 8px;
-  }
-  .contact-section-item-desc {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 28px;
-    color: #ffffff;
-  }
-  
-  .contact-section-form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: transparent;
-  }
-  .contact-section-inp:placeholder-shown {
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 25px;
-    letter-spacing: -0.115385px;
-    color: #ffffff;
-    mix-blend-mode: normal;
-    opacity: 0.6;
-  }
-  .contact-section-inp {
-    background-color: transparent;
-    width: 540px;
-    padding: 16px 8px;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-left-color: transparent;
-    border-bottom-color: #fff;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 25px;
-    letter-spacing: -0.115385px;
-    color: #ffffff;
-    mix-blend-mode: normal;
-    outline: none;
-    opacity: 0.6;
-    margin-bottom: 8px;
-  }
-  .message {
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 25px;
-    letter-spacing: -0.115385px;
-    color: #ffffff;
-    mix-blend-mode: normal;
-    opacity: 0.6;
-    margin-left: 8px;
-    margin-top: 16px;
-    margin-bottom: 16px;
-  }
-  .contact-section-btn {
-    border: 2px solid #ffffff;
-    border-radius: 24px;
-    background-color: white;
-    margin-top: 16px;
-    padding: 9px 30px;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 28px;
-    color: #004047;
-  }
-  
-
-
-/**************? MIRJALOL AKA START ************/
-/*************!   HEADER TABLET START     *******************/ 
-  @media screen and (max-width: 768px) {
-    
-  }
-/*************!   HEADER TABLET END     *******************/ 
-
-
-/*************!   HERO-SECTION TABLET START     *******************/ 
-@media screen and (max-width: 768px) {
-    
-}
-/*************!   HERO-SECTION TABLET END     *******************/ 
-
-/**************? MIRJALOL AKA END ************/
-
-
-
-
-/**************? DIYORBEK  AKA START ************/
-/*************!   BUILDING-SECTION TABLET START     *******************/ 
-@media screen and (max-width: 768px) {
-    
-}
-/*************!   BUILDING-SECTION TABLET END     *******************/ 
-
-
-/*************!   DELEVERY-SECTION TABLET START     *******************/ 
-@media screen and (max-width: 768px) {
-    
-}
-/*************!   DELEVERY-SECTION TABLET END     *******************/ 
-/**************? DIYORBEK  AKA END ************/
-
-
-
-/**************? ULUGBEK   AKA START ************/
-/*************!   SITE-ASIDE TABLET START     *******************/ 
-@media screen and (max-width: 768px) {
-    
-}
-/*************!   SITE-ASIDE TABLET END     *******************/ 
-
-
-/*************!   SITE-FOOTER TABLET START     *******************/ 
-@media screen and (max-width: 768px) {
-    
-}
-/*************!   SITE-FOOTER TABLET END     *******************/ 
-/**************? ULUGBEK   AKA END ************/
-
-
-
-
-
-
-
-
-
-/*************** MOBILE START ****************/
-
-/**************? MIRJALOL AKA START ************/
-/*************!   HEADER MOBILE START     *******************/ 
-@media screen and (max-width: 375px) {
-    
-}
-/*************!   HEADER MOBILE END     *******************/ 
-
-
-/*************!   HERO-SECTION MOBILE START     *******************/ 
-@media screen and (max-width: 375px) {
-  
-}
-/*************!   HERO-SECTION MOBILE END     *******************/ 
-
-/**************? MIRJALOL AKA END ************/
-
-
-
-
-/**************? DIYORBEK  AKA START ************/
-/*************!   BUILDING-SECTION MOBILE START     *******************/ 
-@media screen and (max-width: 375px) {
-  
-}
-/*************!   BUILDING-SECTION MOBILE END     *******************/ 
-
-
-/*************!   DELEVERY-SECTION MOBILE START     *******************/ 
-@media screen and (max-width: 375px) {
-  
-}
-/*************!   DELEVERY-SECTION MOBILE END     *******************/ 
-/**************? DIYORBEK  AKA END ************/
-
-
-
-/**************? ULUGBEK   AKA START ************/
-/*************!   SITE-ASIDE MOBILE START     *******************/ 
-@media screen and (max-width: 375px) {
-  
-}
-/*************!   SITE-ASIDE MOBILE END     *******************/ 
-
-
-/*************!   SITE-FOOTER MOBILE START     *******************/ 
-@media screen and (max-width: 375px) {
-  
-}
-/*************!   SITE-FOOTER MOBILE END     *******************/ 
-/**************? ULUGBEK   AKA END ************/
-/*************** MOBILE END ****************/
+                                @import url('https://fonts.googleapis.com/css2?family=Livvic:wght@400;500;600;700&display=swap');
+                                /* ROOT */
+                                
+                                 :root {
+                                    --hero-bg-color: #014e56;
+                                    --build-bg-color: #012f34;
+                                    --deliver-bg-color: #004047;
+                                    --article-bg-color: #f67e7e;
+                                    --footer-bg-color: #002529;
+                                    --main-text-color: #fff;
+                                    --deliver-text-color: #79c8c7;
+                                }
+                                
+                                html {
+                                    box-sizing: border-box;
+                                    height: 100%;
+                                    scroll-behavior: smooth;
+                                }
+                                
+                                *,
+                                *::before,
+                                *::after {
+                                    box-sizing: inherit;
+                                }
+                                
+                                body {
+                                    display: flex;
+                                    flex-direction: column;
+                                    height: 100%;
+                                    margin: 0;
+                                    font-family: "Livvic", "Arial", sans-serif;
+                                    font-weight: 600;
+                                    background-color: #fff;
+                                }
+                                
+                                img {
+                                    max-width: 100%;
+                                    height: auto;
+                                }
+                                
+                                .visually-hidden {
+                                    position: absolute;
+                                    width: 1px;
+                                    height: 1px;
+                                    margin: -1px;
+                                    border: 0;
+                                    padding: 0;
+                                    white-space: nowrap;
+                                    clip-path: inset(100%);
+                                    clip: rect(0 0 0 0);
+                                    overflow: hidden;
+                                }
+                                
+                                .container {
+                                    width: 100%;
+                                    max-width: 1150px;
+                                    margin-right: auto;
+                                    margin-left: auto;
+                                    padding-right: 20px;
+                                    padding-left: 20px;
+                                }
+                                
+                                ul {
+                                    padding-left: 0;
+                                    list-style: none;
+                                }
+                                
+                                a {
+                                    text-decoration: none;
+                                }
+                                /****************** Header styles start *****************/
+                                
+                                .site-header {
+                                    padding-top: 73px;
+                                    padding-bottom: 129px;
+                                    background-color: var(--hero-bg-color);
+                                }
+                                
+                                .site-header__wrapper {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                }
+                                
+                                .site-header__start {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    width: 380px;
+                                }
+                                
+                                .site-header__logo {
+                                    color: var(--main-text-color);
+                                }
+                                
+                                .site-header__burger {
+                                    display: none;
+                                }
+                                
+                                .site-nav__list {
+                                    display: flex;
+                                }
+                                
+                                .site-nav__item:first-child {
+                                    margin-right: 40px;
+                                }
+                                
+                                .site-nav__link {
+                                    font-size: 18px;
+                                    line-height: 28px;
+                                    color: var(--main-text-color);
+                                }
+                                
+                                .site-nav__link:active {
+                                    color: var(--article-bg-color);
+                                }
+                                
+                                .site-header__btn {
+                                    padding-top: 11px;
+                                    padding-right: 33px;
+                                    padding-bottom: 11px;
+                                    padding-left: 32px;
+                                    border: 2px solid var(--main-text-color);
+                                    border-radius: 24px;
+                                    font-size: 18px;
+                                    line-height: 28px;
+                                    color: var(--main-text-color);
+                                }
+                                
+                                .site-header__btn:active {
+                                    background-color: var(--main-text-color);
+                                    color: var(--footer-bg-color);
+                                }
+                                /****************** Header styles end *****************/
+                                /****************** Main styles start *****************/
+                                /* Hero section styles start */
+                                
+                                .hero-section {
+                                    padding-bottom: 250px;
+                                    background-image: url("../images/icons/disk-left.svg"), url("../images/icons/disk-bottom.svg");
+                                    background-repeat: no-repeat;
+                                    background-position: calc(50% - 770px) top, calc(50% + 400px) calc(50% + 230px);
+                                    background-color: var(--hero-bg-color);
+                                }
+                                
+                                .hero-section__wrapper {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: flex-end;
+                                }
+                                
+                                .hero-section__title {
+                                    width: 600px;
+                                    margin: 0;
+                                    font-weight: 700;
+                                    font-size: 100px;
+                                    line-height: 100px;
+                                    color: var(--main-text-color);
+                                }
+                                
+                                .hero-section__title-talent {
+                                    color: var(--article-bg-color);
+                                }
+                                
+                                .hero-section__desc {
+                                    width: 445px;
+                                    margin: 0;
+                                    font-size: 18px;
+                                    line-height: 28px;
+                                    color: var(--main-text-color);
+                                }
+                                
+                                .hero-section__desc::before {
+                                    display: block;
+                                    width: 50px;
+                                    margin-bottom: 79px;
+                                    height: 4px;
+                                    background-color: var(--deliver-text-color);
+                                    content: "";
+                                }
+                                /* Hero section styles end */
+                                /* Build section styles start */
+                                
+                                .build-section {
+                                    padding-top: 140px;
+                                    padding-bottom: 140px;
+                                    background-image: url("../images/icons/right-circle.svg");
+                                    background-repeat: no-repeat;
+                                    background-position: calc(50% + 760px) bottom;
+                                    background-color: var(--build-bg-color);
+                                }
+                                
+                                .build-section__wrapper {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: flex-start;
+                                }
+                                
+                                .build-section__title {
+                                    width: 455px;
+                                    margin: 0;
+                                    font-weight: 700;
+                                    font-size: 48px;
+                                    line-height: 48px;
+                                    color: var(--main-text-color);
+                                }
+                                
+                                .build-section__title::before {
+                                    display: block;
+                                    width: 50px;
+                                    height: 4px;
+                                    margin-bottom: 54px;
+                                    background-color: var(--article-bg-color);
+                                    content: "";
+                                }
+                                
+                                .build-section__list {
+                                    width: 540px;
+                                    margin-top: 54px;
+                                }
+                                
+                                .build-section__item {
+                                    position: relative;
+                                    margin-bottom: 32px;
+                                    padding-left: 95px;
+                                }
+                                
+                                .build-section__item:last-child {
+                                    margin-bottom: 0;
+                                }
+                                
+                                .build-section__item::before {
+                                    position: absolute;
+                                    top: 10px;
+                                    left: 0;
+                                    display: inline-block;
+                                    width: 72px;
+                                    height: 72px;
+                                    padding-right: 72px;
+                                    margin-right: 23px;
+                                    background-image: url("../images/icons/user.svg");
+                                    background-repeat: no-repeat;
+                                    background-position: left center;
+                                    content: "";
+                                }
+                                
+                                .build-section__item:nth-child(2)::before {
+                                    background-image: url("../images/icons/settings.svg");
+                                }
+                                
+                                .build-section__item:nth-child(3)::before {
+                                    background-image: url("../images/icons/grafic.svg");
+                                }
+                                
+                                .build-section__item-title {
+                                    margin-top: 0;
+                                    margin-bottom: 16px;
+                                    font-weight: 700;
+                                    font-size: 18px;
+                                    line-height: 28px;
+                                    color: var(--article-bg-color);
+                                }
+                                
+                                .build-section__item-desc {
+                                    margin: 0;
+                                    font-size: 15px;
+                                    line-height: 25px;
+                                    color: var(--main-text-color);
+                                    opacity: 0.8;
+                                }
+                                /* Build section styles end */
+                                /* Deliver section styles start */
+                                
+                                .deliver-section {
+                                    padding-top: 140px;
+                                    padding-bottom: 151px;
+                                    background-image: url("../images/deliver-right-bg.png"), url("../images/icons/rigth-bottom-bg.svg");
+                                    background-position: calc(50% - 685px) calc(50% - 333px), calc(50% + 660px) calc(50% + 382px);
+                                    background-repeat: no-repeat;
+                                    background-color: #004047;
+                                }
+                                
+                                .deliver-section__title {
+                                    max-width: 932px;
+                                    width: 100%;
+                                    margin: 0 auto;
+                                    margin-bottom: 56px;
+                                    font-weight: 700;
+                                    font-size: 48px;
+                                    line-height: 48px;
+                                    text-align: center;
+                                    color: var(--main-text-color);
+                                }
+                                
+                                .deliver-section__title-span {
+                                    color: var(--deliver-text-color);
+                                }
+                                
+                                .deliver-section__list {
+                                    display: flex;
+                                    justify-content: space-between;
+                                }
+                                
+                                .deliver-section__item {
+                                    width: 350px;
+                                    padding-top: 36px;
+                                    background-image: url("../images/icons/quotu.svg");
+                                    background-repeat: no-repeat;
+                                    background-position: top center;
+                                    text-align: center;
+                                }
+                                
+                                .deliver-section__desc {
+                                    margin-top: 0;
+                                    margin-bottom: 24px;
+                                    font-size: 15px;
+                                    line-height: 25px;
+                                    color: var(--main-text-color);
+                                }
+                                
+                                .deliver-section__user-name {
+                                    margin-top: 0;
+                                    margin-bottom: 2px;
+                                    font-weight: 700;
+                                    font-size: 18px;
+                                    line-height: 28px;
+                                    color: var(--deliver-text-color);
+                                }
+                                
+                                .deliver-section__job-title {
+                                    margin-top: 0;
+                                    margin-bottom: 32px;
+                                    font-size: 13px;
+                                    line-height: 18px;
+                                    color: var(--main-text-color);
+                                }
+                                /* Deliver section styles end */
+                                /****************** Main styles end *****************/
+                                /***************** Article styles start ****************/
+                                
+                                .site-article {
+                                    padding-top: 76px;
+                                    padding-bottom: 86px;
+                                    background-color: var(--article-bg-color);
+                                    background-image: url(../images/icons/left-bottom-bg.svg);
+                                    background-repeat: no-repeat;
+                                    background-position: calc(50% - 650px) calc(50% + 83px);
+                                }
+                                
+                                .site-article-wrapper {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+                                
+                                .site-article-title {
+                                    margin: 0;
+                                    margin-right: 260px;
+                                    font-weight: 700;
+                                    font-size: 48px;
+                                    line-height: 38px;
+                                    color: var(--build-bg-color);
+                                }
+                                
+                                .site-article-link {
+                                    padding: 11px 33px;
+                                    background-color: var(--article-bg-color);
+                                    border: 2px solid var(--build-bg-color);
+                                    border-radius: 24px;
+                                    font-size: 18px;
+                                    line-height: 28px;
+                                    color: var(--build-bg-color);
+                                }
+                                
+                                .site-article-link:active {
+                                    background-color: var(--build-bg-color);
+                                    color: var(--main-text-color);
+                                }
+                                /**************** Article styles end ****************/
+                                /****************** Footer styles start ****************/
+                                
+                                .site-footer {
+                                    padding: 48px 0;
+                                    background-color: var(--footer-bg-color);
+                                }
+                                
+                                .site-foooter-wrapper {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                }
+                                
+                                .site-footer-start {
+                                    display: flex;
+                                }
+                                
+                                .site-footer-top {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    height: 100px;
+                                    width: 310px;
+                                }
+                                
+                                .site-footer-logo {
+                                    color: var(--main-text-color);
+                                }
+                                
+                                .site-footer-start-list {
+                                    display: flex;
+                                    align-items: center;
+                                    margin: 0;
+                                }
+                                
+                                .site-footer-start-item:first-child {
+                                    margin-right: 40px;
+                                }
+                                
+                                .site-footer-start-link {
+                                    font-size: 18px;
+                                    line-height: 28px;
+                                    color: var(--main-text-color);
+                                }
+                                
+                                .site-footer-start-link:active {
+                                    color: var(--article-bg-color);
+                                }
+                                
+                                .site-footer-bottom-list {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    height: 100px;
+                                    margin: 0;
+                                }
+                                
+                                .site-footer-bottom-link {
+                                    font-size: 15px;
+                                    line-height: 25px;
+                                    color: var(--main-text-color);
+                                    mix-blend-mode: normal;
+                                    opacity: 0.6;
+                                }
+                                
+                                .site-footer-end {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    align-items: flex-end;
+                                    height: 100px;
+                                }
+                                
+                                .site-footer-social {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 16px;
+                                }
+                                
+                                .site-footer-social-link {
+                                    color: var(--main-text-color);
+                                }
+                                
+                                .site-footer-social-link:active {
+                                    color: var(--article-bg-color);
+                                }
+                                
+                                .site-footer-desc {
+                                    font-size: 15px;
+                                    line-height: 25px;
+                                    text-align: right;
+                                    color: var(--main-text-color);
+                                    mix-blend-mode: normal;
+                                    opacity: 0.6;
+                                }
+                                /****************** footer styles end ****************/
+                                
+                                .contact-section {
+                                    padding-bottom: 120px;
+                                    background-color: #014e56;
+                                }
+                                
+                                .contact-section-wrapper {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                }
+                                
+                                .contact-section-start {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                }
+                                
+                                .contact-section-title {
+                                    width: 350px;
+                                    height: 100px;
+                                    font-weight: 700;
+                                    font-size: 64px;
+                                    line-height: 100px;
+                                    color: #ffffff;
+                                    margin-top: 0;
+                                    margin-bottom: 16px;
+                                }
+                                
+                                .contact-section-desc {
+                                    width: 540px;
+                                    height: 48px;
+                                    font-weight: 700;
+                                    font-size: 32px;
+                                    line-height: 48px;
+                                    color: #f67e7e;
+                                    margin-top: 0;
+                                    margin-bottom: 32px;
+                                }
+                                
+                                .contact-section-list {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    margin: 0;
+                                    padding: 0;
+                                    list-style: none;
+                                }
+                                
+                                .contact-section-item {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 23px;
+                                    margin-bottom: 8px;
+                                }
+                                
+                                .contact-section-item-desc {
+                                    font-weight: 700;
+                                    font-size: 18px;
+                                    line-height: 28px;
+                                    color: #ffffff;
+                                }
+                                
+                                .contact-section-form {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    background-color: transparent;
+                                }
+                                
+                                .contact-section-inp:placeholder-shown {
+                                    font-weight: 600;
+                                    font-size: 15px;
+                                    line-height: 25px;
+                                    letter-spacing: -0.115385px;
+                                    color: #ffffff;
+                                    mix-blend-mode: normal;
+                                    opacity: 0.6;
+                                }
+                                
+                                .contact-section-inp {
+                                    background-color: transparent;
+                                    width: 540px;
+                                    padding: 16px 8px;
+                                    border-top-color: transparent;
+                                    border-right-color: transparent;
+                                    border-left-color: transparent;
+                                    border-bottom-color: #fff;
+                                    font-weight: 600;
+                                    font-size: 15px;
+                                    line-height: 25px;
+                                    letter-spacing: -0.115385px;
+                                    color: #ffffff;
+                                    mix-blend-mode: normal;
+                                    outline: none;
+                                    opacity: 0.6;
+                                    margin-bottom: 8px;
+                                }
+                                
+                                .message {
+                                    font-weight: 600;
+                                    font-size: 15px;
+                                    line-height: 25px;
+                                    letter-spacing: -0.115385px;
+                                    color: #ffffff;
+                                    mix-blend-mode: normal;
+                                    opacity: 0.6;
+                                    margin-left: 8px;
+                                    margin-top: 16px;
+                                    margin-bottom: 16px;
+                                }
+                                
+                                .contact-section-btn {
+                                    border: 2px solid #ffffff;
+                                    border-radius: 24px;
+                                    background-color: white;
+                                    margin-top: 16px;
+                                    padding: 9px 30px;
+                                    font-weight: 600;
+                                    font-size: 18px;
+                                    line-height: 28px;
+                                    color: #004047;
+                                }
+                                
+                                .menu-burger {
+                                    display: none;
+                                }
+                                /**************? MIRJALOL AKA START ************/
+                                /*************!   HEADER TABLET START     *******************/
+                                
+                                @media screen and (max-width: 768px) {
+                                    .site-header {
+                                        padding-top: 64px;
+                                        padding-bottom: 64px;
+                                    }
+                                    .site .site-header__start {
+                                        width: 316px;
+                                    }
+                                    .menu-burger {
+                                        display: none;
+                                    }
+                                }
+                                /*************!   HEADER TABLET END     *******************/
+                                /*************!   HERO-SECTION TABLET START     *******************/
+                                
+                                @media screen and (max-width: 1085px) {
+                                    .hero-section__title {
+                                        text-align: center;
+                                    }
+                                    .hero-section__desc {
+                                        text-align: center;
+                                        margin-top: 24px;
+                                    }
+                                    .hero-section__desc::before {
+                                        display: none;
+                                    }
+                                    .hero-section__wrapper {
+                                        display: flex;
+                                        flex-direction: column;
+                                        margin: 0;
+                                        padding: 0;
+                                        align-items: center;
+                                    }
+                                }
+                                
+                                @media screen and (max-width: 768px) {
+                                    .hero-section {
+                                        padding-top: 48px;
+                                        padding-bottom: 256px;
+                                        background-position: calc(50% - 768px) 68px, center calc(50% + 258px);
+                                    }
+                                    .hero-section__wrapper {
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                    }
+                                    .hero-section__start,
+                                    .hero-section__end {
+                                        text-align: center;
+                                    }
+                                    .hero-section__title {
+                                        width: 100%;
+                                        max-width: 350px;
+                                        margin-right: auto;
+                                        margin-bottom: 24px;
+                                        margin-left: auto;
+                                        font-weight: 700;
+                                        font-size: 64px;
+                                        line-height: 56px;
+                                    }
+                                    .hero-section__desc {
+                                        font-weight: 600;
+                                        font-size: 15px;
+                                        line-height: 28px;
+                                    }
+                                    .hero-section__desc::before {
+                                        display: none;
+                                    }
+                                    .site-header__burger {
+                                        display: none;
+                                    }
+                                }
+                                /* navbar */
+                                
+                                @media screen and (max-width:655px) {
+                                    .site-header__btn {
+                                        display: none;
+                                    }
+                                    .site-nav {
+                                        display: none;
+                                    }
+                                    .site-header__burger {
+                                        display: none;
+                                    }
+                                }
+                                /*************!   HERO-SECTION TABLET END     *******************/
+                                /**************? MIRJALOL AKA END ************/
+                                /*************** MOBILE START ****************/
+                                /**************? MIRJALOL AKA START ************/
+                                /*************!   HEADER MOBILE START     *******************/
+                                
+                                @media only screen and (max-width:655px) {
+                                    .site-header__burger {
+                                        display: block;
+                                        width: 20px;
+                                        height: 17px;
+                                        border: none;
+                                        background-color: transparent;
+                                        background-image: url(../images/burger.svg);
+                                    }
+                                    .menu-burger {
+                                        display: block;
+                                        position: absolute;
+                                        top: 0;
+                                        right: 0;
+                                        width: 0%;
+                                        max-width: 255px;
+                                        height: 100vh;
+                                        background-color: #012f34;
+                                        transition: width 0.3s ease;
+                                    }
+                                    .sitenav-mobi {
+                                        margin-left: 48px;
+                                    }
+                                    .close-button {
+                                        width: 200px;
+                                        height: 17px;
+                                        margin-top: 56px;
+                                        background-color: transparent;
+                                        border: none;
+                                        background-repeat: no-repeat;
+                                        background-position: calc(50% + 88px);
+                                        background-image: url(../images/close-burger.svg);
+                                    }
+                                    .menu-burger-active {
+                                        width: 100%;
+                                    }
+                                    .sitenav__link {
+                                        font-family: 'Livvic';
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        font-size: 18px;
+                                        line-height: 28px;
+                                        /* identical to box height, or 156% */
+                                        color: #FFFFFF;
+                                    }
+                                }
+                                
+                                @media only screen and (max-width: 375px) {
+                                    .site-header {
+                                        padding-top: 48px;
+                                        padding-bottom: 48px;
+                                    }
+                                    .site-header__wrapper {
+                                        display: flex;
+                                        flex-direction: row;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                    }
+                                    .site-header__burger {
+                                        display: block;
+                                    }
+                                    .site-header__logo svg {
+                                        width: 120px;
+                                        height: 30px;
+                                    }
+                                    .sitenav__link {
+                                        font-size: 17px;
+                                        line-height: 20px;
+                                        font-family: 'Livvic';
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        font-size: 18px;
+                                        line-height: 28px;
+                                        color: #FFFFFF;
+                                    }
+                                }
+                                /*************!   HEADER MOBILE END     *******************/
+                                /*************!   HERO-SECTION MOBILE START     *******************/
+                                
+                                @media screen and (max-width: 375px) {
+                                    .hero-section__title {
+                                        margin-bottom: 18px;
+                                        font-weight: 700;
+                                        font-size: 40px;
+                                        line-height: 40px;
+                                    }
+                                    .hero-section__desc {
+                                        max-width: 327px;
+                                        width: 100%;
+                                        font-weight: 600;
+                                        font-size: 15px;
+                                        line-height: 28px;
+                                    }
+                                }
+                                /*************!   HERO-SECTION MOBILE END     *******************/
+                                /**************? MIRJALOL AKA END ************/
