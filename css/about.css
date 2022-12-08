@@ -176,7 +176,7 @@
     position: absolute;
     z-index: 3;
     bottom: -29px;
-    left: 150px;
+    left: 135px;
     width: 56px;
     height: 56px;
     margin: 0 auto;
@@ -265,6 +265,61 @@
   }
   .meeting__wrapper-link-img:hover {
     fill: #f67e7e;
+  }
+
+  @media screen and (max-width: 1170px) {
+
+    .meeting{
+      background-image:  url("../images/icons/meeting_bg_left.png"), url("../images/deliver-right-bg.png");
+      background-repeat: no-repeat;
+      background-position: calc(50% - 400px) calc(50% - 500px), calc(50% + 300px) calc(50% + 550px);
+    }
+    .meeting__list{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 11px;
+    }
+    .meeting__item{
+      margin: 0;
+    }
+    
+  }
+
+  @media screen and (max-width: 775px) {
+
+    .meeting{
+      background-image: url("../images/icons/meeting_bg_left.png"),url("../images/deliver-right-bg.png");
+      background-repeat: no-repeat;
+      background-position: calc(50% - 188px) calc(50% - 1080px), calc(50% + 105px) calc(50% + 1030px);
+    }
+
+    .meeting__list{
+      padding:0 39px 0 38px ;
+    }
+
+    .meeting__title{
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 32px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+
+    .meeting__item{
+      max-width: 325px;
+      margin-bottom: 32px;
+    }
+
+    .meeting__inner-front{
+      max-width: 327px;
+      padding: 32px 0 46px 0;
+    }
+    .meeting__inner-back{
+      max-width: 327px;
+      padding: 32px 0 46px 0;
+    }
   }
   
   /***** MEET SECTION END *****/
