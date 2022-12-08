@@ -1,11 +1,9 @@
-var elMenuBtn = document.querySelector(".site-header__burger");
-var elCloseBtn = document.querySelector(".close-button");
-var elMenuBurger = document.querySelector(".menu-burger");
+var elopenModalBtn = document.querySelectorAll(".meeting__item-btn");
 
-elMenuBtn.addEventListener("click", function() {
-    elMenuBurger.classList.add("menu-burger-active");
-})
+elopenModalBtn.forEach(function(link){
 
-elCloseBtn.addEventListener("click", function() {
-    elMenuBurger.classList.remove("menu-burger-active");
+    link.addEventListener("click" , function(evt){
+        evt.preventDefault();
+        link.classList.toggle("meeting__item-btn--active")
+    })
 })
